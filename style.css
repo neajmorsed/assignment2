@@ -1,0 +1,242 @@
+/* fontstyle */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common syle */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* banner style */
+.header{
+    background-color: #2D25A0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 102px;
+    padding-top: 153px;
+    padding-bottom: 86px;
+
+}
+.banner_title{
+    padding-left: 156px;
+    color: #ffffff;
+
+}
+
+.banner_title h1{
+    margin-top: 0px;
+    margin-bottom: 27px;
+}
+.button{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.arrow{
+    width: 24px;
+    height: 24px;
+    margin: 0px 8px;
+}
+.banner_img{
+    padding-right: 140px;
+    transition: transform 0.5s ease-in;
+}
+.banner:hover .banner_img{
+    transform: scale(1.1);
+}
+.banner_img img{
+    width: 556.01px;
+    height: 438px;
+    
+}
+ /* palyer section style start */
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.container{
+    width: 1050px;
+    margin-top: 70px;
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+
+}
+.player{
+    padding: 15px;
+}
+.player:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player h3{
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player p{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin: 10px 0px;
+}
+/* blog news  start*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 69px;
+
+}
+.blog h1{
+    font-size: 48px;
+    color: #0A0826;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.blog p{
+    margin-bottom: 24px;
+    color: #6C6C6C;
+    font-size: 16px;
+}
+.blog img{
+    width: 567px;
+}
+/* match schedule style*/
+.calender_title{
+    text-align: center;
+}  
+.calender{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0 auto;
+}
+.day{
+    background-color: #6C6C6C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 7px;
+}
+.date{
+    background-color: #363333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 7px;
+    color: #ffffff;
+}
+.other{
+    background-color: #607433;
+}
+.match{
+    background-color: #21693d;
+
+}
+/* soponsor style*/
+.sponsor{
+    background-color: #f5ebeb;
+    width: 100%;
+    margin-top: 80px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.205);;
+}
+.sponsor_party{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+.sponsor_name img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+.sponsor_name img:hover{
+    transform: scale(1.2);
+}
+/* footer sytle start */
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 170px;
+    
+}
+.footer_mid{
+    Width: 483.87px;
+    Height: 213px;
+    margin: 0 auto;
+}
+.footer_logo img{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.footer_icon{
+    padding-bottom: 21.47px;
+}
+.footer_icon .fab{
+    text-align: center;
+    margin: 0 21.47px;
+    color: #969BAB;
+    width: 17.07px;
+    height: 17.07px;
+}
+.copyright{
+    font-size: 18px;
+    color: #000000;
+}
+/* media query */
+/* On screens that are 992px or less, set the background color to blue */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .players, .blogs, .banner, .sponsor_party{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .banner, .sponsor_party{
+        flex-direction: column;
+    }
+    .blog{
+        margin-top: 20px;
+    }
+    .banner{
+        margin: 0;
+        padding: 0;
+    }
+    .banner_img{
+        padding: 20px;
+        background-color: #2D25A0;
+    }
+    .banner_title{
+        background-color:#2D25A0;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+    }
+    
+}
